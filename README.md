@@ -42,7 +42,7 @@ git clone https://github.com/casparml/notero.git
 Modify the HTML content, update links, and replace the logo/images as needed.
 
 ### Customizing the Copyright Year
-The auto-updating copyright year is handled by `copyright.js`. By default, it will show the current year, but you can specify a starting year:
+The auto-updating copyright year is handled by `app.js`. By default, it will show the current year, but you can specify a starting year:
 
 ```html
 <footer>
