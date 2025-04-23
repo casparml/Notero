@@ -34,3 +34,24 @@ const sr = ScrollReveal({
 sr.reveal(`.home-data`, { origin: 'top', delay: 400 })
 sr.reveal(`.home-img`, { origin: 'bottom', delay: 600 })
 sr.reveal(`.home-footer`, { origin: 'bottom', delay: 800 })
+
+
+/**
+ * Auto Copyright Year Updater
+ * @param {number} startYear
+ * @returns {string}
+ * @author: Caspar Landman
+ */
+function updateCopyright(startYear = new Date().getFullYear()) {
+    const currentYear = new Date().getFullYear();
+    const yearText = startYear === currentYear ?
+        startYear : `${startYear} - ${currentYear}`;
+
+    const copyright = document.getElementById('copyright');
+    if (copyright) copyright.textContent = yearText;
+
+    return yearText;
+}
+
+// Initialize on page load
+document.addEventListener('DOMContentLoaded', () => updateCopyright(2025));

@@ -17,7 +17,7 @@ Notero is a modern, responsive error page template designed to provide an elegan
 - Modern navigation with mobile-friendly toggle
 - Professional header and footer design
 - Call-to-action buttons
-- Social media/external links integration
+- Social media/externally links integration
 
 ### Technical Features
 - **Auto Copyright Year Updater**: Dynamically displays the current year or year range in the footer
@@ -39,7 +39,7 @@ git clone https://github.com/casparml/notero.git
 ## Usage
 
 ### Basic Setup
-Simply modify the HTML content, update links, and replace the logo/images as needed.
+Modify the HTML content, update links, and replace the logo/images as needed.
 
 ### Customizing the Copyright Year
 The auto-updating copyright year is handled by `copyright.js`. By default, it will show the current year, but you can specify a starting year:
@@ -49,17 +49,17 @@ The auto-updating copyright year is handled by `copyright.js`. By default, it wi
   <span>© <span id="copyright"></span> Your Brand Name. All rights reserved.</span>
 </footer>
 
-<script src="includes/copyright.js"></script>
+<script src="assets/js/app.js"></script>
 ```
 
-To change the starting year, open `includes/copyright.js` and update:
+To change the starting year, open `assets/js/app.js` and update:
 
 ```javascript
 document.addEventListener('DOMContentLoaded', () => updateCopyright(2022)); // Change to your desired start year
 ```
 
 ### Modifying Animations
-The template uses ScrollReveal for animations. Modify `assets/js/style.js` to adjust animation settings.
+The template uses ScrollReveal for animations. Modify `assets/js/app.js` to adjust animation settings.
 
 ## Browser Support
 - Chrome, Firefox, Safari, Edge (latest versions)
@@ -70,10 +70,10 @@ The template uses ScrollReveal for animations. Modify `assets/js/style.js` to ad
 - ScrollReveal for scroll animations
 
 ## License
-MIT License - See LICENSE file for details.
+MIT License—See LICENSE file for details.
 
 ## Author
-Caspar Landman - [GitHub](https://github.com/casparml/) | [Website](https://www.casparlandman.com/) | [LinkedIn](https://www.linkedin.com/in/casparlandman/)
+Caspar Landman - [GitHub](https://github.com/casparml/) | [Portfolio](https://www.casparlandman.com/) | [LinkedIn](https://www.linkedin.com/in/casparlandman/)
 
 ---
 
